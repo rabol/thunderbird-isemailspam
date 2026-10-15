@@ -199,8 +199,10 @@ once the add-on is published.
 
 - Only one message at a time; there's no bulk checking or reporting.
 - Only addresses can be reported, not whole domains.
-- The IsEmailSpam documentation doesn't say what happens if an address
-  is reported twice, or whether international addresses are accepted.
+- Reporting an address that has already been reported is shown as a
+  success, because the address is on the list either way.
+- International (non-ASCII) addresses are sent as typed. If the service
+  rejects one, the popup says "The service rejected this address".
 - Requests time out after 15 seconds and are never retried
   automatically.
 - Tested on Thunderbird 157 on Linux. A live **Check** has been verified,
