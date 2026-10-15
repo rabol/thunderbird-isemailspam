@@ -1,7 +1,8 @@
 # IsEmailSpam for Thunderbird
 
-Check the sender of an email against the [IsEmailSpam](https://isemailspam.com)
-blacklist, or report it as spam, from Thunderbird's message toolbar.
+The official Thunderbird add-on for [IsEmailSpam](https://isemailspam.com).
+Check the sender of an email against the IsEmailSpam blacklist, or
+report it as spam, from Thunderbird's message toolbar.
 
 - **Check sender**: see whether the sender's address or domain is listed.
 - **Report sender as spam**: report the address after confirming.

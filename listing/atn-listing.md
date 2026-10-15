@@ -23,8 +23,9 @@ API key.
 
 ## Description
 
-**IsEmailSpam for Thunderbird** adds a button to the message toolbar that
-works with the IsEmailSpam service at isemailspam.com.
+**IsEmailSpam for Thunderbird** is the official add-on for the
+IsEmailSpam service at isemailspam.com. It adds a button to the message
+toolbar.
 
 **Check sender:** see at a glance whether the sender's email address or
 its domain is listed as spam.
@@ -80,6 +81,8 @@ spam.
 
 ## Notes to reviewers
 
+- This is the official add-on for IsEmailSpam. The developer, Steen
+  Rabol, owns and operates isemailspam.com.
 - The source is plain, unminified JavaScript, HTML and CSS with no
   bundler or third-party libraries. The uploaded XPI is the source.
   `scripts/build-xpi.mjs` only zips a fixed list of files.
