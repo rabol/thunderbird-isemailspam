@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IsEmailSpam settings</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="options.css">
+  <script type="module" src="options.js"></script>
+</head>
+<body>
+  <main>
+    <h1>IsEmailSpam settings</h1>
+
+    <form id="key-form" novalidate>
+      <label for="api-key">API key</label>
+      <div class="row">
+        <input id="api-key" type="password" autocomplete="off" spellcheck="false"
+               aria-describedby="key-help key-status">
+        <button type="button" id="toggle" aria-pressed="false" aria-controls="api-key">Show</button>
+      </div>
+      <p id="key-help" class="note">Get an API key from <a href="https://isemailspam.com" target="_blank" rel="noopener noreferrer">isemailspam.com</a>. Saving doesn't contact the service; the key is checked the first time you use Check or Report.</p>
+      <div class="buttons">
+        <button type="submit" id="save">Save</button>
+        <button type="button" id="remove">Remove key</button>
+      </div>
+      <p id="key-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <section id="permission" hidden>
+      <h2>Website access</h2>
+      <p>IsEmailSpam needs permission to contact isemailspam.com.</p>
+      <button type="button" id="grant">Allow access to isemailspam.com</button>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <ul>
+        <li>When you choose <em>Check sender</em> or <em>Report sender as spam</em>, the sender's email address (from the From header) and your API key are sent to isemailspam.com. Nothing is sent when you only open the menu.</li>
+        <li>No message content, subject, recipients or attachments leave Thunderbird.</li>
+        <li>Your API key is kept in this add-on's local storage in your Thunderbird profile. That storage isn't an encrypted password vault, so anyone with access to your profile can read it.</li>
+        <li>Check and report history isn't saved. Results are kept only until Thunderbird or the add-on restarts.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

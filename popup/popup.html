@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IsEmailSpam</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <main>
+    <h1>IsEmailSpam</h1>
+    <p id="status" role="status" aria-live="polite">Loading…</p>
+
+    <section id="details" hidden aria-labelledby="sender-label">
+      <dl>
+        <dt id="sender-label">Sender (From)</dt>
+        <dd id="email" class="address"></dd>
+        <dt>Sends to</dt>
+        <dd>isemailspam.com</dd>
+      </dl>
+      <p class="note">From addresses can be forged. Only this address is sent, and only when you choose an action.</p>
+
+      <div id="actions" class="buttons">
+        <button type="button" id="check">Check sender</button>
+        <button type="button" id="report">Report sender as spam</button>
+      </div>
+
+      <div id="confirm" class="confirm" hidden role="group" aria-labelledby="confirm-text">
+        <p id="confirm-text">Report <strong id="confirm-email" class="address"></strong> as spam? This submits a spam report for this address to IsEmailSpam.</p>
+        <div class="buttons">
+          <button type="button" id="confirm-report" class="danger">Report as spam</button>
+          <button type="button" id="cancel-report">Cancel</button>
+        </div>
+      </div>
+
+      <section id="check-result" class="result" aria-live="polite" hidden></section>
+      <section id="report-result" class="result" aria-live="polite" hidden></section>
+    </section>
+
+    <footer>
+      <button type="button" id="settings" class="link">Settings</button>
+    </footer>
+  </main>
+</body>
+</html>

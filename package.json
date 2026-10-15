@@ -1,0 +1,25 @@
+{
+  "name": "isemailspam-thunderbird",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Thunderbird add-on to check or report a message sender with IsEmailSpam",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "build": "node scripts/build-xpi.mjs",
+    "lint": "npx --yes addons-linter@7 dist/isemailspam.xpi"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Steen Rabol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabol/thunderbird-isemailspam.git"
+  },
+  "homepage": "https://github.com/rabol/thunderbird-isemailspam",
+  "bugs": {
+    "url": "https://github.com/rabol/thunderbird-isemailspam/issues"
+  }
+}

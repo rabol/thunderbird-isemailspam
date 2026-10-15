@@ -1,0 +1,17 @@
+main { max-width: 38rem; padding: 1em; }
+h2 { font-size: 1em; margin: 1.4em 0 .4em; }
+label { display: block; font-weight: 600; margin-bottom: .3em; }
+.row { display: flex; gap: .5em; }
+input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: .4em .5em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--fg);
+  background: var(--bg);
+}
+.buttons { display: flex; flex-wrap: wrap; gap: .5em; margin: .6em 0; }
+ul { padding-left: 1.2em; }
+li { margin: .3em 0; }

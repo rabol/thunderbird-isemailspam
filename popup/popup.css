@@ -1,0 +1,14 @@
+main { width: 22rem; max-width: 100%; padding: .9em 1em; box-sizing: border-box; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: .2em .8em; margin: 0 0 .4em; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+.address { overflow-wrap: anywhere; font-weight: 600; }
+.buttons { display: flex; flex-wrap: wrap; gap: .5em; margin: .6em 0; }
+.confirm { border: 1px solid var(--danger); border-radius: 4px; padding: .5em .7em; margin: .6em 0; }
+.confirm p { margin: 0; }
+.result { border-top: 1px solid var(--border); padding-top: .5em; margin-top: .6em; }
+.result h2 { font-size: 1em; margin: 0 0 .3em; }
+.result ul { margin: .2em 0; padding-left: 1.2em; }
+.result p { margin: .3em 0; }
+#status:empty { display: none; }
+footer { margin-top: .8em; }
